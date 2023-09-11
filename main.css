@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Aldrich', sans-serif;
+    font-family: 'Antonio', sans-serif;
+    font-family: 'Archivo', sans-serif;
+    font-family: 'Teko', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-image: linear-gradient(135deg,rgb(146, 0, 0),rgb(0, 194, 194),rgb(0, 0, 138));
+    box-shadow: 0 7px 10px rgba(0,0,0,0.18);
+}
+.logo{
+    width: 50px;
+    border-radius: 50%;
+}
+.navbar a{
+    position: relative;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+.navbar a:hover::before{
+     width: 100%;
+}
+section{
+    height: 100vh;
+    min-height: 100vh;
+}
+.sec1{
+    background-image: linear-gradient(45deg,rgba(146, 0, 0, 0.2),rgba(0, 194, 194, 0.2),rgba(0, 0, 138, 0.2));
+    overflow: hidden;
+}
+.sec2{
+    background-color: rgb(145, 145, 145);
+}
+.sec3{
+    background-image: linear-gradient(45deg,rgba(146, 0, 0, 0.2),rgba(0, 194, 194, 0.2),rgba(0, 0, 138, 0.2));
+    display: grid;
+    place-items: center;
+} 
+.wrapper .buttons{
+    display: inline-block;
+    height: 120px;
+    width: 120px; 
+    margin: 0 50px;
+    overflow: hidden;
+    background: rgb(211, 211, 211);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+}
+.wrapper .buttons:hover{
+    width: 400px;
+}
+.wrapper .buttons .icons{
+    display: inline-block; 
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    border-radius: 50px; 
+    box-sizing: border-box;  
+    line-height: 60px; 
+    transition: all 0.3s ease-out;
+}
+.wrapper .buttons:nth-child(1):hover .icons{
+    background: #E1306C;
+}
+.wrapper .buttons:nth-child(2):hover .icons{
+    background: #17ff17;
+}
+.wrapper .buttons:nth-child(1) span{
+    color: #E1306C;
+}
+.wrapper .buttons:nth-child(2) span{
+    color: #17ff17;
+}
+.wrapper .buttons .icons i{
+    font-size: 80px;
+    line-height: 120px;
+}
+.wrapper .buttons span{
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 70px;
+    margin-left: 10px;
+}
+.paint{
+    display: flex;
+    margin-left: 63%;
+    margin-top: -13%;
+    width: 35%;
+}
+.paint2{
+    display: flex;
+    margin-left: -5%;
+    margin-top: -13%;
+    width: 25%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.paint3{
+    display: flex;
+    margin-left: 100%;
+    margin-top: -10%;
+    width: 18%;
+}
+.secimage{
+    position: relative;
+    left: 70%;
+    top: 30%;
+    width: 25%;
+    border-radius: 50%;
+    border: 5px rgb(158, 0, 0);
+    box-shadow: 6px 15px 18px rgba(0, 0, 0, 0.795);
+    border-style: solid;
+}
+.hi,.name{
+    letter-spacing: -5px;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    margin: 0;
+}
+.malithu,.de,.silva{
+    font-size: 120px;
+    font-family: antonio;
+    text-decoration: underline 4px;
+    line-height: 280px;
+}
+.malithu{
+    color: rgb(146, 0, 0);
+}
+.de{
+    color: rgb(0, 194, 194);
+}
+.silva{
+    color: rgb(0, 0, 138);
+}
+.hi{
+    letter-spacing: 0px;
+    color: #3d535f;
+    font-weight: lighter;
+    left: 13%;
+    font-size: 90px;
+    margin: 0;
+}
